@@ -9,7 +9,7 @@
 </head>
 <body>
     <header id="header">
-<nav id="navbar">
+<nav id="navbar" class="navbar">
     <div class="logo"><a href="#">Web Dev Creative</a></div>
     <ul class="nav_links">
         <li><a href="#">Home</a></li>
@@ -20,8 +20,41 @@
 
     <a href="#" class="action_btn">Get Started</a>
     <div class="toggle_btn"> <i class="fa-solid fa-bars"></i></div>
+
+
+<div class="dropdown_menu open">
+    <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="action_btn ">Get Started</a></li>
+</div>
+
 </nav>
 
     </header>
+
+    <h1>hello</h1>
+
+    <script>
+         
+
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open');
+
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleIcon.classList = isOpen ? 'fa-solid fa-xmark' 
+            : 'fa-solid fa-bars'
+        }
+
+
+    </script>
+
+   
 </body>
 </html>

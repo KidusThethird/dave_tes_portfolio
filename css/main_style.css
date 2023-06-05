@@ -1,7 +1,13 @@
 *{
     font-family: 'Open Sans' , sans-serif;
-}
 
+}
+body{
+    background-image: url('https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+background-color: black;
+background-size: cover;
+background-position: center;
+}
 
 
 /* Header style */
@@ -23,7 +29,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    background-color: black;
+   
     align-items: center;
     justify-content: space-between;
 }
@@ -44,21 +50,22 @@ font-weight: bold;
 }
 #navbar a{
     text-decoration: none;
-    color: green;
+    color: rgb(203, 223, 203);
     font-size: 1rem;
 }
 #navbar a:hover{
-    color: orange;
+    color: rgb(0, 255, 0);
 }
 
 .toggle_btn{
-    color: green;
+    color: rgb(153, 231, 153);
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
 
 .action_btn{
+    
     background-color: orange;
     color: white;
     padding: 0.5rem 1rem;
@@ -77,6 +84,35 @@ font-weight: bold;
 }
 
 
+.dropdown_menu{
+    display: none;
+position: absolute;
+
+right: 2rem;
+height: 0;
+top: 60px;
+width: 300px;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(15px);
+border-radius: 10px;
+overflow: hidden;
+transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+
 
 /*end of nav bar */
 
@@ -86,13 +122,34 @@ font-weight: bold;
 
 @media(max-width: 700px){
    #navbar .nav_links, 
-   #navbar .action_btn{
+   .navbar .action_btn{
     display: none;
    }
    #navbar .toggle_btn{
     display: block;
    }
+   #navbar .dropdown_menu{
+    display: block;
+   }
+   .dropdown_menu .action_btn{
+    display: block;
+   }
+   .dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
+}
+
+
+
+@media(max-width: 514px){
+    .dropdown_menu{
+        width:unset;
+        left: 2rem;
+        right: 2rem;
+    }
+}
 
 /* End  Responsive Design */
