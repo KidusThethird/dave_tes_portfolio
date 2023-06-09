@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/main_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <title>Dave Tes</title>
 </head>
 <body>
@@ -149,7 +150,57 @@
 
  </section>
  
- 
+ <section class="slider">
+ <div id="slider">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    <input type="radio" name="slider" id="slide4">
+    <div id="slides">
+       <div id="overflow">
+          <div class="inner">
+             <div class="slide slide_1">
+                <div class="slide-content">
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@dave_tes/video/7165163799308160262" data-video-id="7165163799308160262" style="max-width: 305px;min-width: 225px; height: 100%; border-radius: 20px; z-index: 1;" > <section> <a target="_blank" title="@dave_tes" href="https://www.tiktok.com/@dave_tes?refer=embed"></a></section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                   <p>Content for Slide 1</p>
+                </div>
+             </div>
+             <div class="slide slide_2">
+                <div class="slide-content">
+                   <h2>Slide 2</h2>
+                   <p>Content for Slide 2</p>
+                </div>
+             </div>
+             <div class="slide slide_3">
+                <div class="slide-content">
+                   <h2>Slide 3</h2>
+                   <p>Content for Slide 3</p>
+                </div>
+             </div>
+             <div class="slide slide_4">
+                <div class="slide-content">
+                   <h2>Slide 4</h2>
+                   <p>Content for Slide 4</p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div id="controls">
+       <label for="slide1"></label>
+       <label for="slide2"></label>
+       <label for="slide3"></label>
+       <label for="slide4"></label>
+    </div>
+    <div id="bullets">
+       <label for="slide1"></label>
+       <label for="slide2"></label>
+       <label for="slide3"></label>
+       <label for="slide4"></label>
+    </div>
+
+</div>
+ </section>
 
 <section class="softwares">
 <h1>Softwares I work with</h1>
@@ -171,6 +222,27 @@
 
 </section>
 
+
+
+<section class="contact-me">
+
+    <form action="">
+        <div class="form-container">
+        <label for="fname">First name:</label><br>
+        <input class="field-container" type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input class="field-container" type="text" id="lname" name="lname" value=""><br><br>
+        <label for="lname">Email:</label><br>
+        <input class="field-container" type="email" id="email" name="emial" value=""><br><br>
+        <label for="lname">Message:</label><br>
+        <textarea class="field-container" type="text" id="message" name="message" value="" rows="4" cols="50"></textarea>
+            <br><br>
+        
+    </div>
+    <input class="submit-button" type="submit" value="Send">
+      </form> 
+
+</section>
 
  <script>
          

@@ -1,5 +1,5 @@
 *{
-    font-family: 'Open Sans' , sans-serif;
+   
   
   
 
@@ -257,7 +257,8 @@ border-radius: 15px;
 
 .about-me-section h1{
     justify-content: center;
-    padding-left: 30px;
+    text-align: center;
+
 }
 
 .about-me-section img{
@@ -297,6 +298,7 @@ padding-right: 10%;
 .projects{
    margin-top: -20px; 
    background-color: white;
+   padding-bottom: 20px;
 }
 
 .projects-head h1{
@@ -337,6 +339,156 @@ padding-left: 7%;
 /* end of projects section  */
 
 
+/* slider section start */
+
+.slider{
+    background-color: rgb(96, 100, 96);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#slider{
+    
+    
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#slider input[type=radio] {
+    display: none;
+ }
+ #slider label {
+    cursor:pointer;
+    text-decoration: none;
+ }
+ #slides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background:rgb(96, 100, 96);
+    position: relative;
+    z-index: 1;
+ }
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+ }
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+ #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+ }
+ #slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+ }
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 580px;
+ }
+ #slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+ }
+ #slides .slide_1 {
+    background: #00171F;
+ }
+ #slides .slide_2 {
+    background: #003459;
+ }
+ #slides .slide_3 {
+    background: #007EA7;
+ }
+ #slides .slide_4 {
+    background: #00A8E8;
+ }
+ #controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+ }
+ #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+ }
+ #controls label:hover {
+    opacity: 1;
+ }
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(4),
+ #slide4:checked ~ #controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+ }
+ #slide1:checked ~ #controls label:nth-last-child(2),
+ #slide2:checked ~ #controls label:nth-last-child(3),
+ #slide3:checked ~ #controls label:nth-last-child(4),
+ #slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+ }
+ #bullets {
+    margin: 150px 0 0;
+    text-align: center;
+ }
+ #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2),
+ #slide3:checked ~ #bullets label:nth-child(3),
+ #slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+ }
+ @media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+ }
+
+
+
+
+/* end of slider section */
+
+
+
 /*softwares section */
 
 .softwares{
@@ -370,6 +522,60 @@ padding-left: 7%;
 }
 
 /*end of softwares section */
+
+
+/* contact-me section start */
+
+.contact-me{
+    height: 100vh;
+    background-color: white;
+
+}
+.contact-me form{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: "Sofia", sans-serif;;
+}
+
+.contact-me input{
+    height: 20px;
+}
+.field-container{
+    position: relative;
+}
+.form-container {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 40px 40px 40px;
+    grid-template-areas: "name name""number number""expiration security";
+    max-width: 400px;
+    padding: 20px;
+    color: #707070;
+}
+.contact-me label {
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.contact-me input {
+    margin-top: 3px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+}
+.contact-me .submit-button{
+    width: 120px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    cursor: pointer;
+    margin-left: 5%;
+    border-radius: 50px;
+}
+
+/* end of contact-me section */
 
 
 /* Media Query Responsive Design */
@@ -437,6 +643,8 @@ padding-left: 7%;
 
 /* End  Responsive Design */
 
+
+/* software section responive start */
 @media (max-width: 1000px) {
     .softwares{
         height: 300px;
@@ -469,3 +677,5 @@ padding-left: 7%;
         height: 150px;
     }
   }  
+
+  /* software section responsive end */
