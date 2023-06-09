@@ -43,6 +43,7 @@ padding: 0px;
     height: 5vh;
     background: rgba(0,0,0,0.2);
     border-radius: 10px;
+   
 }
 
 /* End of header  */
@@ -52,8 +53,9 @@ padding: 0px;
 /* nav bar styles*/
 
 #navbar{
-    
-    width: 100%;
+   position: fixed;
+    z-index: 5;
+    width: 90%;
     height: 60px;
     max-width: 1200px;
     margin: 0 auto;
@@ -87,11 +89,12 @@ font-weight: bold;
     color: rgb(0, 255, 0);
 }
 
-.toggle_btn{
+ .toggle_btn{
     color: rgb(153, 231, 153);
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
+   
 }
 
 .action_btn{
@@ -151,7 +154,7 @@ transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 .welcome-section{
     
-    height: 70vh;
+    height: 80%;
    
     
 }
@@ -177,7 +180,7 @@ transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin-bottom: 10%;
 
     color: transparent;
-    -webkit-text-stroke: 1px #b63434;
+    -webkit-text-stroke: 1px #eee9e9;
     background: url(../images/back.png);
     -webkit-background-clip: text;
     animation: back 20s linear infinite;
@@ -209,6 +212,61 @@ border-radius: 15px;
 
 
 
+
+/* start of about-me-section */
+
+
+.about-me-section{
+    background-color: rgb(173, 158, 158);
+
+}
+
+
+.about-header{
+    display: flex;
+   width: 100%;
+    
+   justify-content: center;
+
+}
+
+.about-me-section h1{
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.about-me-section img{
+ 
+    height: 350px;
+  
+}
+.group-segment{
+display: flex;
+padding-top: 5%;
+padding-left: 5%;
+padding-right: 5%;
+padding-bottom: 5%;
+}
+
+.each-segment{
+padding-right: 10%;
+}
+.each-segment i{
+    display: flex;
+    justify-content: center;
+}
+.each-segment h2{
+    justify-content: center;
+    display: flex;
+}
+.each-segment p{
+    text-align: center;
+}
+
+
+/* end of about-me-section */*
+
+
 /*   */
 
 .projects{
@@ -222,11 +280,14 @@ border-radius: 15px;
 /* Media Query Responsive Design */
 
 @media(max-width: 777px){
+  
+    
    #navbar .nav_links, 
    .navbar .action_btn{
     display: none;
    }
    #navbar .toggle_btn{
+    right: 10;
     display: block;
    }
    #navbar .dropdown_menu{
