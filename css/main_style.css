@@ -40,9 +40,13 @@ padding: 0px;
     
     position: relative;
     padding: 0 2rem;
-    height: 5vh;
-    background: rgba(0,0,0,0.2);
-    border-radius: 10px;
+    height: 60px;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    z-index: 5;
+
+   
    
 }
 
@@ -52,10 +56,18 @@ padding: 0px;
 
 /* nav bar styles*/
 
+
+
 #navbar{
-   position: fixed;
-    z-index: 5;
+ position: fixed;
+  
+   
+   
+   z-index: 5;
     width: 90%;
+   
+   
+
     height: 60px;
     max-width: 1200px;
     margin: 0 auto;
@@ -270,9 +282,44 @@ padding-right: 10%;
 /*   */
 
 .projects{
-    height: 100vh;
-    color: white;
+   margin-top: -20px; 
+   background-color: white;
 }
+
+.projects-head h1{
+    padding-top: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.tiktok-group-elments{
+
+/*    display: flex;  */
+
+    max-width: 1200px;
+    margin: 0 ;
+    display: grid;
+    gap: 0rem;
+   justify-content: center;
+   
+padding-left: 7%;
+
+
+}
+.tiktok-element{
+    height: 580; 
+  
+    
+   background-color: white;
+    z-index: 0;
+    overflow: hidden;
+    padding-bottom: -50%;
+  /*  color: white; */
+   
+   
+}
+
+
 
 /*   */
 
@@ -318,5 +365,26 @@ padding-right: 10%;
         right: 2rem;
     }
 }
+
+
+
+
+
+/* gird responsive start */
+
+@media (min-width: 600px) {
+    .tiktok-group-elments { grid-template-columns: repeat(2, 1fr);  padding-left: 0%;}
+  }
+
+  @media (min-width: 900px) {
+    .tiktok-group-elments { grid-template-columns: repeat(3, 1fr);  }
+  }
+  @media (min-width: 1145px) {
+    .tiktok-group-elments { grid-template-columns: repeat(3, 1fr); padding-left: 2%; }
+  }
+  
+
+
+/* end grid responsive */
 
 /* End  Responsive Design */
