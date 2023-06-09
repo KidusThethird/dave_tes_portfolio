@@ -292,7 +292,7 @@ padding-right: 10%;
 /* end of about-me-section */*
 
 
-/*   */
+/*  projects section */
 
 .projects{
    margin-top: -20px; 
@@ -334,7 +334,42 @@ padding-left: 7%;
 
 
 
-/*   */
+/* end of projects section  */
+
+
+/*softwares section */
+
+.softwares{
+    background-color:rgb(173, 158, 158);
+    height: 350px;
+    margin-top: -15px;
+}
+.list-of-softwares{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.each-software{
+   padding-right: 5%;
+
+}
+
+.softwares img{
+    height: 200px;
+}
+.softwares p{
+    text-align: center;
+}
+.softwares h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+
+/*end of softwares section */
 
 
 /* Media Query Responsive Design */
@@ -401,3 +436,36 @@ padding-left: 7%;
 /* end grid responsive */
 
 /* End  Responsive Design */
+
+@media (max-width: 1000px) {
+    .softwares{
+        height: 300px;
+    }
+    .softwares img{
+        height: 150px;
+    }
+  }
+  @media (max-width: 766px) {
+    .softwares img{
+        height: 100px;
+    }
+    .softwares{
+        height: 250px;
+    }
+  }  
+  @media (max-width: 500px) {
+    .softwares img{
+        height: 75px;
+    }
+  }  
+  @media (max-width: 380px) {
+    .softwares img{
+        height: 50px;
+    }
+    .softwares p{
+        display: none;
+    }
+    .softwares{
+        height: 150px;
+    }
+  }  
