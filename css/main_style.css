@@ -42,7 +42,8 @@ padding: 0px;
     padding: 0 2rem;
     height: 60px;
     position: fixed;
-    background: rgba(64,18,139,0.5);
+   
+   background: rgba(48, 162, 255,0.5);
     
     width: 100%;
     z-index: 5;
@@ -91,6 +92,7 @@ align-items: center;
 #navbar .logo a{
 
    padding-left: 5px;
+   font-family: 'Tilt Prism', cursive;
 }
 #navbar li{
     list-style: none;
@@ -103,7 +105,7 @@ align-items: center;
 }
 #navbar a{
     text-decoration: none;
-    color: rgb(203, 223, 203);
+    color: white;
     font-size: 1rem;
 }
 #navbar a:hover{
@@ -120,7 +122,7 @@ align-items: center;
 
 .action_btn{
     
-    background-color: #DD58D6;
+    background-color: #00C4FF;
     color: white;
     padding: 0.5rem 1rem;
     border: none;
@@ -191,7 +193,7 @@ transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 .text-box p{
     font-size: 50px;
     font-weight: 600;
-    margin-bottom: -80px;
+    margin-bottom: -100px;
 }
 .text-box h1{
     font-size: 120px;
@@ -251,7 +253,7 @@ border-radius: 15px;
 
 
 .about-me-section{
-    background-color: rgb(173, 158, 158);
+    background-color: #30A2FF;
 
 }
 
@@ -267,13 +269,15 @@ border-radius: 15px;
 .about-me-section h1{
     justify-content: center;
     text-align: center;
-
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    font-size: 20px;
 }
 
 .about-me-section img{
  
     height: 350px;
-  
+    
 }
 .group-segment{
 display: flex;
@@ -289,6 +293,8 @@ padding-right: 10%;
 .each-segment i{
     display: flex;
     justify-content: center;
+    font-size:70px;
+    color: #FFF5B8;
 }
 .each-segment h2{
     justify-content: center;
@@ -296,6 +302,8 @@ padding-right: 10%;
 }
 .each-segment p{
     text-align: center;
+    font-size: 18px;
+ color: #FFF5B8;;
 }
 
 
@@ -314,6 +322,7 @@ padding-right: 10%;
     padding-top: 10px;
     justify-content: center;
     display: flex;
+    font-family: 'Indie Flower', cursive;
 }
 
 .tiktok-group-elments{
@@ -348,164 +357,23 @@ padding-left: 7%;
 /* end of projects section  */
 
 
-/* slider section start */
-
-.slider{
-    background-color: rgb(96, 100, 96);
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-#slider{
-    
-    
-    margin: 0 auto;
-    width: 800px;
-    max-width: 100%;
-    text-align: center;
-}
-
-#slider input[type=radio] {
-    display: none;
- }
- #slider label {
-    cursor:pointer;
-    text-decoration: none;
- }
- #slides {
-    padding: 10px;
-    border: 3px solid #ccc;
-    background:rgb(96, 100, 96);
-    position: relative;
-    z-index: 1;
- }
- #overflow {
-    width: 100%;
-    overflow: hidden;
- }
- #slide1:checked ~ #slides .inner {
-    margin-left: 0;
- }
- #slide2:checked ~ #slides .inner {
-    margin-left: -100%;
- }
- #slide3:checked ~ #slides .inner {
-    margin-left: -200%;
- }
- #slide4:checked ~ #slides .inner {
-    margin-left: -300%;
- }
- #slides .inner {
-    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-    width: 400%;
-    line-height: 0;
-    height: 580px;
- }
- #slides .slide {
-    width: 25%;
-    float:left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    color: #fff;
- }
- #slides .slide_1 {
-    background: #00171F;
- }
- #slides .slide_2 {
-    background: #003459;
- }
- #slides .slide_3 {
-    background: #007EA7;
- }
- #slides .slide_4 {
-    background: #00A8E8;
- }
- #controls {
-    margin: -180px 0 0 0;
-    width: 100%;
-    height: 50px;
-    z-index: 3;
-    position: relative;
- }
- #controls label {
-    transition: opacity 0.2s ease-out;
-    display: none;
-    width: 50px;
-    height: 50px;
-    opacity: .4;
- }
- #controls label:hover {
-    opacity: 1;
- }
- #slide1:checked ~ #controls label:nth-child(2),
- #slide2:checked ~ #controls label:nth-child(3),
- #slide3:checked ~ #controls label:nth-child(4),
- #slide4:checked ~ #controls label:nth-child(1) {
-    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
-    float:right;
-    margin: 0 -50px 0 0;
-    display: block;
- }
- #slide1:checked ~ #controls label:nth-last-child(2),
- #slide2:checked ~ #controls label:nth-last-child(3),
- #slide3:checked ~ #controls label:nth-last-child(4),
- #slide4:checked ~ #controls label:nth-last-child(1) {
-    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
-    float:left;
-    margin: 0 0 0 -50px;
-    display: block;
- }
- #bullets {
-    margin: 150px 0 0;
-    text-align: center;
- }
- #bullets label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius:100%;
-    background: #ccc;
-    margin: 0 10px;
- }
- #slide1:checked ~ #bullets label:nth-child(1),
- #slide2:checked ~ #bullets label:nth-child(2),
- #slide3:checked ~ #bullets label:nth-child(3),
- #slide4:checked ~ #bullets label:nth-child(4) {
-    background: #444;
- }
- @media screen and (max-width: 900px) {
-    #slide1:checked ~ #controls label:nth-child(2),
-    #slide2:checked ~ #controls label:nth-child(3),
-    #slide3:checked ~ #controls label:nth-child(4),
-    #slide4:checked ~ #controls label:nth-child(1),
-    #slide1:checked ~ #controls label:nth-last-child(2),
-    #slide2:checked ~ #controls label:nth-last-child(3),
-    #slide3:checked ~ #controls label:nth-last-child(4),
-    #slide4:checked ~ #controls label:nth-last-child(1) {
-       margin: 0;
-    }
-    #slides {
-       max-width: calc(100% - 140px);
-       margin: 0 auto;
-    }
- }
-
-
-
-
-/* end of slider section */
 
 
 
 /*softwares section */
 
 .softwares{
-    background-color:rgb(173, 158, 158);
+    background-image: url('../images/cover2.jpg');
+   
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 350px;
     margin-top: -15px;
 }
 .list-of-softwares{
+    backdrop-filter: blur(8px);
     display: flex;
     width: 100%;
     justify-content: center;
@@ -516,10 +384,14 @@ padding-left: 7%;
 }
 
 .softwares img{
-    height: 200px;
+    height: 100px;
 }
 .softwares p{
     text-align: center;
+    font-family: 'Tilt Prism', cursive;
+    color: white;
+    background-color: rgb(0,0,0,0.4);
+    border-radius: 10px;
 }
 .softwares h1{
     display: flex;
@@ -527,7 +399,8 @@ padding-left: 7%;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    
+    font-family: 'Indie Flower', cursive;
+    color: white;
 }
 
 /*end of softwares section */
@@ -590,16 +463,42 @@ padding-right: 50px;
 width: 50%;
 }
 .contact-me-section-2{
-    background-color: green;
+    background-color: #30A2FF;
 padding-left: 50px;
 padding-top: 20px;
 width: 50%;
+color:white ;
 }
 
 
 .contact-me-section-2 .contact-me-icons img{
     height: 40px;
-    padding-right: 3%;
+    padding-right: 10%;
+   padding-top: 150px;
+}
+
+.contact-me-section-2 h1{
+    display: flex;
+    
+    padding-left: 20%;
+}
+
+.contact-me-section-2 .together{
+
+    display: flex;
+   
+}
+
+.contact-me-section-2 p{
+display: flex;
+padding-left: 5%;
+align-items: center;
+
+}
+
+
+.contact-me-section-2 img{
+    cursor: pointer;
 }
 /* end of contact-me section */
 
@@ -608,8 +507,9 @@ width: 50%;
 
 .bottom-bar{
     height: 40px;
-    background-color: white;
+    background-color: #FFE79B;
     margin-top: -15px;
+    color: #000000;
 }
 .bottom-bar p{
     justify-content: center;
