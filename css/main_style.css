@@ -527,8 +527,9 @@ padding-left: 7%;
 /* contact-me section start */
 
 .contact-me{
-    height: 100vh;
+    height: 500px;
     background-color: white;
+    display: flex;
 
 }
 .contact-me form{
@@ -575,8 +576,38 @@ padding-left: 7%;
     border-radius: 50px;
 }
 
+.contact-me-section-1{
+padding-right: 50px;
+width: 50%;
+}
+.contact-me-section-2{
+    background-color: green;
+padding-left: 50px;
+padding-top: 20px;
+width: 50%;
+}
+
+
+.contact-me-section-2 .contact-me-icons img{
+    height: 40px;
+    padding-right: 3%;
+}
 /* end of contact-me section */
 
+
+/* bottom bar start */
+
+.bottom-bar{
+    height: 40px;
+    background-color: white;
+    margin-top: -15px;
+}
+.bottom-bar p{
+    justify-content: center;
+    display: flex;
+    padding-top: 5px;
+}
+/* bottom bar end */
 
 /* Media Query Responsive Design */
 
