@@ -42,7 +42,8 @@ padding: 0px;
     padding: 0 2rem;
     height: 60px;
     position: fixed;
-    background: rgba(0,0,0,0.5);
+    background: rgba(64,18,139,0.5);
+    
     width: 100%;
     z-index: 5;
 
@@ -81,8 +82,16 @@ padding: 0px;
 #navbar .logo{
 font-size: 1.5rem;
 font-weight: bold;
+display: flex;
+align-items: center;
 }
+#navbar .logo img{
+    height: 40px;
+}
+#navbar .logo a{
 
+   padding-left: 5px;
+}
 #navbar li{
     list-style: none;
    
@@ -98,7 +107,7 @@ font-weight: bold;
     font-size: 1rem;
 }
 #navbar a:hover{
-    color: rgb(0, 255, 0);
+    color: #FFE79B;
 }
 
  .toggle_btn{
@@ -111,7 +120,7 @@ font-weight: bold;
 
 .action_btn{
     
-    background-color: orange;
+    background-color: #DD58D6;
     color: white;
     padding: 0.5rem 1rem;
     border: none;
