@@ -198,6 +198,19 @@ transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation: back 20s linear infinite;
 
 }
+.run-effect{
+    
+    line-height: 90px;
+   
+    font-weight: 700;
+    margin-bottom: 10%;
+
+    color: transparent;
+    -webkit-text-stroke: 1px #eee9e9;
+    background: url(../images/back.png);
+    -webkit-background-clip: text;
+    animation: back 20s linear infinite;
+}
 @keyframes back{
     100%{
         background-position: 2000px 0;
