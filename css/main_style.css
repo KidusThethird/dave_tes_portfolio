@@ -41,7 +41,7 @@ padding: 0px;
     position: relative;
     padding: 0 2rem;
     height: 60px;
-    position: fixed;
+    position: fixed; 
    
    background: rgba(48, 162, 255,0.5);
     
@@ -61,7 +61,7 @@ padding: 0px;
 
 
 #navbar{
- position: fixed;
+  position: fixed; 
   
    
    
