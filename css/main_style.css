@@ -256,7 +256,14 @@ border-radius: 15px;
     height: 35px;
     display: block;
     margin: 10px;
+    transition: 0.3s;
 }
+
+
+.social-icons img:hover{
+    height: 50px;
+    transition: 0.3s;
+} 
 /* End of welcome section */
 
 
