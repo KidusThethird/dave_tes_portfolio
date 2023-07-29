@@ -5,7 +5,7 @@
 
 body{
  width: 100%;
-background-color: black;
+background-color: 21242b;
 background-size: cover;
 background-position: center;
 
@@ -268,8 +268,6 @@ border-radius: 15px;
 /* End of welcome section */
 
 
-
-
 /* start of about-me-section */
 
 
@@ -329,6 +327,107 @@ padding-right: 10%;
 
 
 /* end of about-me-section */*
+
+
+
+/* counter start */
+#counter{
+    box-sizing: border-box;
+    background-color: #21242b;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+  
+
+}
+#counter .wrapper {
+   
+    position: relative;
+    width: 100%;
+    transform:  translate(-50%, -50%);
+    top:50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  #counter .container {
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background-color: #21242b;
+    border-bottom: 10px solid #188cf9;
+  }
+  
+  #counter i{
+    color: #188cf9;
+    font-size: 2.5em;
+    text-align: center;
+  
+  }
+  
+  #counter span.num {
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+  }
+  
+  #counter span.text {
+    color: #e0e0e0;
+    font-size: 1.1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+  }
+  
+  @media screen and (max-width:1024px) {
+    #counter .wrapper {
+      width: 85vw;
+    }
+    #counter .container {
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #counter .wrapper{
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  
+    #counter .container {
+      width: calc(50% -40px);
+      height: 30vmin;
+      font-size: 13px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #counter .wrapper{
+      gap: 15px;
+    }
+  
+    #counter .container {
+      width: 100%;
+      height: 25vmin;
+      font-size: 8px;
+    }
+  }
+
+/* counter end*/
 
 
 /*  projects section */
