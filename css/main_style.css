@@ -196,7 +196,9 @@ transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
    
     
 }
-
+.for_mobile {
+    display: none;
+   }
 .text-box{
     color: white;
     position: absolute;
@@ -505,7 +507,7 @@ padding-left: 7%;
 
 /* testimonial section start */
 .testimonial{
-    
+    overflow: hidden;
 }
 .testimonial-head h1{
     padding-top: 10px;
@@ -829,7 +831,19 @@ align-items: center;
     }
 }
 
+/* welcome section responsive */
 
+@media(max-width: 470px){
+   .for_desk {
+    display: none;
+   }
+   .for_mobile {
+    display: block;
+   }
+}
+
+
+/*  welcome section responsive end*/
 
 
 
@@ -1039,6 +1053,7 @@ align-items: center;
         height: 147vh;
         
         width: 100%;
+        overflow: hidden;
     }
 
     .bottom-bar{
