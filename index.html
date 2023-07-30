@@ -1,16 +1,27 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main_style.css">
+
+    
+    
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
-    
 
+    
     <title>Dave Tes</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main_style.css">
+    
 </head>
 <body>
 
@@ -183,154 +194,190 @@
 </div>
 
  </section>
- 
- 
-<section id="testimonial" class="testimonial">
-    
-
-    <div class="container">
-        <div class="testimonial-head">
-        <h1>Testimonial</h1>
-    </div>
-        <div class="veiw-box">
-            <div id="testimonials">
-                
-                <div class="user">
-                    <img src="images/neba.jpg" alt="">
-                    <p>አንተ እየሰራህበት ባለው ስራ ዘርፍ እኛ ሃገር ብዙም ባለሞያ የለም። እንዳንተ አይነት ጎበዝ ልጆች በመምጣታችሁ የበለጠ ተጠቃሚዎቹ እኛ ነን። በርታልኝ!</p>
-                    <h3>Nebyou Endris</h3>
-                    <h4>Movie Maker and Producer</h4>
-                </div>
-                
-                <div class="user space">
-                    <img src="images/yared.jpg" alt="">
-                    <p>ስራዎችህን አይቼያቸዋለሁ፡ ግሩም ናቸው! የምታኮራ ልጅ ነህ። ሜይንስትሪም ውስጥ እንደማይህ ተስፋ አደርጋለሁ። </p>
-                    <h3>Yared Shumete</h3>
-                </div>
-                
-                <div class="user">
-                    <img src="images/henok.png" alt="">
-                    <p>በጣም ጎበዝ ነህ። ትልቅ ቦታ ደርሰህ እንደማይህ ተስፋ አደርጋለሁ።</p>
-                    <h3>Henok Dinku</h3>
-                </div>
-                
-                
-            </div>
-            
-            <div class="controls">
-                <span id="control1"></span>
-                <span id="control2" class="active"></span>
-                <span id="control3"></span>
-            </div>
-            
-        </div>
-    </div>
-    
-
-</section>
 
 
-<section id="softwares" class="softwares">
-<h1>Softwares I work with</h1>
-
-<div class="list-of-softwares">
-    <div class="each-software">
-        <img src="./icons/after-effects.png" alt=""> <p>Adobe After Effects</p>
-    </div>
-    <div class="each-software">
-        <img src="./icons/photoshop.png" alt=""> <p>Adobe Photoshop</p>
-    </div>
-    <div class="each-software">
-        <img src="./icons/premier.png" alt=""> <p>Adobe Premier Pro</p>
-    </div>
-    <div class="each-software">
-        <img src="./icons/audition.png" alt=""> <p>Adobe Audition</p>
-    </div>
-</div>
-
-</section>
-
-
-
-<section id="contact" class="contact-me">
-<div class="contact-me-section-1">
-    <form action="">
-        <div class="form-container">
-        <label for="fname">First name:</label><br>
-        <input class="field-container" type="text" id="fname" name="fname" value=""><br>
-        <label for="lname">Last name:</label><br>
-        <input class="field-container" type="text" id="lname" name="lname" value=""><br><br>
-        <label for="lname">Email:</label><br>
-        <input class="field-container" type="email" id="email" name="emial" value=""><br><br>
-        <label for="lname">Message:</label><br>
-        <textarea class="field-container" type="text" id="message" name="message" value="" rows="4" cols="50"></textarea>
-            <br><br>
-        
-    </div>
-    <input class="submit-button" type="submit" value="Send">
-      </form> 
-    </div>
-
-    <div class="contact-me-section-2">
-        
-        <h1>Reach me</h1>
-        
-        <div class="together">
-        <h2>Email:</h2> <p>davetes@gmail.com</p>
-    </div>
-        <div class="together">
-        <h2>Telegram:</h2> <p>@davetes</p>
-    </div>
-        <div class="together">
-        <h2>Phone</h2><p>+251900550055</p>
-    </div>
-        <div class="contact-me-icons">
-          <a href="https://www.tiktok.com/@dave_tes/" target="_blank">
-            <img src="./icons/tiktok.png" alt="">
-          </a>  
-          <a href="https://www.instagram.com/dave_tes_/" target="_blank">
-            <img src="./icons/instagram.png" alt="">
-          </a>
-            <a href="https://www.facebook.com/dawit.tesfaye.3785" target="_blank">
-                <img src="./icons/facebook.png" alt="">
-            </a>
-           
+  <section id="testimony" class="swiper mySwiper">
    
-      
+    <div class="swiper-wrapper">
 
-            
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/yared.jpg" alt="card image">
         </div>
-    </div>
 
-</section>
+        <div class="card__content">
 
+          <p class="card__text">"ስራዎችህን አይቼያቸዋለሁ፡ ግሩም ናቸው! የምታኮራ ልጅ ነህ። ሜይንስትሪም ውስጥ እንደማይህ ተስፋ አደርጋለሁ።"</p>
+                    <span class="card__title">Yared Shumete</span>
+          <span class="card__name">Movie maker and Producer</span>
+        
+        </div>
+      </div>
 
-<section class="bottom-bar">
-    <p>copyright &copy;</p>
-</section>
- <script>
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/neba.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          
+          <p class="card__text">"አንተ እየሰራህበት ባለው ስራ ዘርፍ እኛ ሃገር ብዙም ባለሞያ የለም። እንዳንተ አይነት ጎበዝ ልጆች በመምጣታችሁ የበለጠ ተጠቃሚዎቹ እኛ ነን። በርታልኝ!"</p>
+          <span class="card__title">Nebiyou Endris</span>
+          <span class="card__name">Movie Maker</span>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/henok.png" alt="card image">
+        </div>
+
+        <div class="card__content">
          
-         let x =0;
-        const toggleBtn = document.querySelector('.toggle_btn');
-        const toggleIcon = document.querySelector('.toggle_btn i');
-        const dropDownMenu = document.querySelector('.dropdown_menu');
+          <p class="card__text">"በጣም ጎበዝ ነህ። ትልቅ ቦታ ደርሰህ እንደማይህ ተስፋ አደርጋለሁ።"</p>
+          <span class="card__title">Henok Dinku</span>
+          <span class="card__name">Movie Artist</span>
+        </div>
+      </div>
 
-if(x==0){
-    dropDownMenu.classList.toggle('open');
-x =1;
-    }
-        toggleBtn.onclick = function(){
-            dropDownMenu.classList.toggle('open');
+     
 
-            const isOpen = dropDownMenu.classList.contains('open')
-            toggleIcon.classList = isOpen ? 'fa-solid fa-xmark' 
-            : 'fa-solid fa-bars'
+    
+</div>
+  </section>
+
+
+
+  <section id="softwares" class="softwares">
+    <h1>Softwares I work with</h1>
+    
+    <div class="list-of-softwares">
+        <div class="each-software">
+            <img src="./icons/after-effects.png" alt=""> <p>Adobe After Effects</p>
+        </div>
+        <div class="each-software">
+            <img src="./icons/photoshop.png" alt=""> <p>Adobe Photoshop</p>
+        </div>
+        <div class="each-software">
+            <img src="./icons/premier.png" alt=""> <p>Adobe Premier Pro</p>
+        </div>
+        <div class="each-software">
+            <img src="./icons/audition.png" alt=""> <p>Adobe Audition</p>
+        </div>
+    </div>
+    
+    </section>
+    
+    
+    
+    <section id="contact" class="contact-me">
+    <div class="contact-me-section-1">
+        <form action="">
+            <div class="form-container">
+            <label for="fname">First name:</label><br>
+            <input class="field-container" type="text" id="fname" name="fname" value=""><br><br>
+            <label for="lname" style="padding-top: 10px;">Last name:</label><br>
+            <input class="field-container" type="text" id="lname" name="lname" value=""><br><br>
+            <label for="lname">Email:</label><br>
+            <input class="field-container" type="email" id="email" name="emial" value=""><br><br>
+            <label for="lname">Message:</label><br>
+            <textarea class="field-container" type="text" id="message" name="message" value="" rows="4" cols="50"></textarea>
+                <br><br>
+            
+        </div>
+        <input class="submit-button" type="submit" value="Send">
+          </form> 
+        </div>
+    
+        <div class="contact-me-section-2">
+            
+            <h1>Reach me</h1>
+            
+            <div class="together">
+            <h2>Email:</h2> <p>davetes@gmail.com</p>
+        </div>
+            <div class="together">
+            <h2>Telegram:</h2> <p>@davetes</p>
+        </div>
+            <div class="together">
+            <h2>Phone</h2><p>+251900550055</p>
+        </div>
+            <div class="contact-me-icons">
+              <a href="https://www.tiktok.com/@dave_tes/" target="_blank">
+                <img src="./icons/tiktok.png" alt="">
+              </a>  
+              <a href="https://www.instagram.com/dave_tes_/" target="_blank">
+                <img src="./icons/instagram.png" alt="">
+              </a>
+                <a href="https://www.facebook.com/dawit.tesfaye.3785" target="_blank">
+                    <img src="./icons/facebook.png" alt="">
+                </a>
+               
+       
+          
+    
+                
+            </div>
+        </div>
+    
+    </section>
+    
+    
+    <section class="bottom-bar">
+        <p>copyright &copy;</p>
+    </section>
+     <script>
+             
+             let x =0;
+            const toggleBtn = document.querySelector('.toggle_btn');
+            const toggleIcon = document.querySelector('.toggle_btn i');
+            const dropDownMenu = document.querySelector('.dropdown_menu');
+    
+    if(x==0){
+        dropDownMenu.classList.toggle('open');
+    x =1;
         }
-    </script>
-
-
-<script src="testimonial.js"></script>
-<script src="counter.js"></script>
+            toggleBtn.onclick = function(){
+                dropDownMenu.classList.toggle('open');
+    
+                const isOpen = dropDownMenu.classList.contains('open')
+                toggleIcon.classList = isOpen ? 'fa-solid fa-xmark' 
+                : 'fa-solid fa-bars'
+            }
+        </script>
+    
+    
    
+    <script src="counter.js"></script>
+       
+    </body>
+    </html>
+
+
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="testimonial.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
 </body>
 </html>
