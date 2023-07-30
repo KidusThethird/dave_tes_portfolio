@@ -373,7 +373,11 @@ padding-right: 10%;
     text-align: center;
   
   }
-  
+ #counter img{
+    height: 50px; width: 50px;  
+    padding-left: 45%;
+    justify-content: center;
+ }
   #counter span.num {
     color: #fff;
     display: grid;
@@ -399,8 +403,13 @@ padding-right: 10%;
       height: 26vmin;
       width: 26vmin;
       font-size: 12px;
+      
     }
+    #counter img{
+        height: 35px; width: 35px;  padding-left: 45%;
+     }
   }
+
   
   @media screen and (max-width: 768px) {
     #counter .wrapper{
@@ -414,7 +423,11 @@ padding-right: 10%;
       height: 30vmin;
       font-size: 13px;
     }
+    #counter img{
+        height: 35px; width: 35px;  padding-left: 45%;
+     }
   }
+ 
   @media screen and (max-width: 480px) {
     #counter .wrapper{
       gap: 15px;
@@ -425,6 +438,9 @@ padding-right: 10%;
       height: 25vmin;
       font-size: 8px;
     }
+    #counter img{
+        height: 20px; width: 20px;  padding-left: 45%;
+     }
   }
 
 /* counter end*/
