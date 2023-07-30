@@ -520,6 +520,7 @@
  }
 
  #testimony{
+    padding-top: 2%;
     font-family: var(--font);
     display: flex;
     justify-content: center;
