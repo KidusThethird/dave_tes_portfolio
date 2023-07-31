@@ -531,7 +531,32 @@
     font-family: 'Indie Flower', cursive;
     color:white;
 }
-  
+
+
+#testimony svg{
+  height: 50px;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#testimony .arrows {
+  display: none;
+ } 
+ #testimony .arrows {
+  padding-top: 50px;
+ }  
+
+
+
+ @media (max-width: 730px) {
+  #testimony .arrows {
+    display: block;
+   } 
+ }
+
+
+
+
   /* ----------- SLIDER ------------ */
   .swiper{
     width: 100%;
@@ -545,7 +570,7 @@
   }
   
   .card{
-    width: 20em;
+    width: 15em;
     height: 90%;
     background-color: #c9e7f8;
     border-radius: 2em;
@@ -558,6 +583,11 @@
   
     margin: 0 2em;
   }
+  @media (min-width: 500px) {
+    .card{
+      width: 20em;
+    }
+   }
   
   .swiper-slide:not(.swiper-slide-active){
     filter: blur(1px);
@@ -756,7 +786,15 @@
  align-items: center;
  
  }
- 
+ @media (max-width: 777px) {
+  .contact-me-icons{
+   
+   padding-bottom: 35px;
+  }
+  .contact-me-section-1{
+    padding-bottom: 10px;
+  }
+ }
  
  .contact-me-section-2 img{
      cursor: pointer;
