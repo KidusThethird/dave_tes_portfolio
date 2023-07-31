@@ -531,6 +531,19 @@
     font-family: 'Indie Flower', cursive;
     color:white;
 }
+.testimony_button{
+  margin-top: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: #188cf9;
+  color: white;
+  border-color: #188cf9;
+  box-shadow: #00C4FF;
+  
+}
+#testimony .english_text{
+  display: none;
+}
 
 
 #testimony svg{
@@ -539,6 +552,9 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+#testimony .arrows-group {
+  display: flex;
+ } 
 #testimony .arrows {
   display: none;
  } 
