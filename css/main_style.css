@@ -559,7 +559,8 @@
   display: none;
  } 
  #testimony .arrows {
-  padding-top: 50px;
+  padding-top: 20px;
+  opacity: 50%;
  }  
 
 
