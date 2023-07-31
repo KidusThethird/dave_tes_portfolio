@@ -1,5 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
+    
+    
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
@@ -7,7 +9,7 @@ var swiper = new Swiper(".mySwiper", {
       rotate: 0,
       stretch: 0,
       depth: 300,
-      modifier: 1,
+      modifier: 3,
       slideShadows: false,
     },
     pagination: {
