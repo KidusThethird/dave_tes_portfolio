@@ -805,6 +805,8 @@
  .social-icons {
      
      display: flex;
+     margin-bottom: -120px;
+    
      
  }
  
